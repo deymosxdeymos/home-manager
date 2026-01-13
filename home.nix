@@ -129,6 +129,17 @@
         fidget-nvim.enable = true;
       };
       ui.colorizer.enable = true;
+
+      # Custom Plugins
+      extraPlugins = {
+        vimtex = {
+          package = pkgs.vimPlugins.vimtex;
+          setup = ''
+            vim.g.vimtex_view_method = 'zathura'
+            vim.g.vimtex_compiler_method = 'latexmk'
+          '';
+        };
+      };
     };
   };
 
