@@ -1,5 +1,4 @@
-{ config, pkgs, inputs, ... }:
-
+{ pkgs, ... }:
 {
   home.username = "deymos";
   home.homeDirectory = "/home/deymos";
@@ -9,8 +8,11 @@
 
   imports = [
     ./modules/nvf.nix
-    ./modules/hyprland.nix
   ];
+
+  home.sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "qt6ct";
+  };
 
   home.packages = with pkgs; [
     deno

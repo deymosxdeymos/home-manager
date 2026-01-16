@@ -16,6 +16,10 @@
       };
 
       lsp.enable = true;
+
+      options = {
+        termguicolors = true;
+      };
       lsp.servers = {
         texlab = {
           enable = true;
@@ -84,7 +88,7 @@
       # Theme
       theme = {
         enable = true;
-        name = "gruvbox";
+        name = "solarized-osaka";
         style = "dark";
       };
 

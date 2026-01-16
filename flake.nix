@@ -9,15 +9,7 @@
     };
     nvf.url = "github:notashelf/nvf";
     stash.url = "github:notashelf/stash";
-    hyprland.url = "github:hyprwm/Hyprland";
-    hy3 = {
-      url = "github:outfoxxed/hy3";
-      inputs.hyprland.follows = "hyprland";
-    };
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
